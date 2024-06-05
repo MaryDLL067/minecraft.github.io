@@ -1,0 +1,169 @@
+#contenedor{
+    border:1px solid blue;   /* Colocamos un borde que indica los limites del todo el contenedor*/
+}
+
+
+#cabecera{   
+
+    background-color:#32aeff; /*color de fondo de un elemento - contenedor div=cabecera*/
+    padding: 30px;
+    text-align: center;
+}
+
+
+.izquierdo {
+    position: sticky;
+    top: 14px;
+    float:left; /* Propiedad flotante css, especifica cómo debe flotar un elemento*/
+    width:20%; /*Ancho sección menu*/
+    text-align:center; /*Alineación del text*/
+    padding:20px; /* Relleno */
+    background-color:aqua; /*color morado con opacidad hsla*/
+
+
+    height: 1252px;/* altura */             /*Añadimos la altura para que se cubra todo*/
+    margin-top:7px; /*Margen superior*/ 
+}
+
+
+.derecho {
+    position: sticky;
+    top: 14px;
+    float:right; /* Propiedad flotante css, especifica cómo debe flotar un elemento*/
+    width:20%; /*Ancho sección menu*/
+    text-align:center; /*Alineación del text*/
+    padding:20px; /* Relleno */
+    background-color:aqua; /*color morado con opacidad hsla*/
+
+    height: 1252px;/* altura */
+    margin-top:7px; /*Margen superior*/ 
+}
+* {
+    box-sizing: border-box; /*La box-sizingpropiedad CSS nos permite incluir el relleno y el borde en el ancho y alto total de un elemento*/
+  }
+.cuerpo{
+background-color: #6bcccaad;
+padding: 30px;
+text-align: justify;
+height: 100%;/* altura */
+margin-top:8px; /*Margen superior*/
+float:left; /* permite al elemento main flotar en una posicion*/
+width:1350px; /* anchura del elemento */
+
+
+}
+
+
+#alinear{
+    display: flex;
+    
+    margin: 7px;
+    }
+
+
+
+ @media only screen and (max-width:620px) { /*consulta de medios especificando aplicar condiciones a la pantalla , en este caso 
+    un ancho máximo de 620px para adaptarse y no se distorsionen los elementos que hay en ella*/
+      .izquierdo, .derecho, .cuerpo {   /* se consideran los divs que hacen la función para maquetar nuestra página, utilizando las clases .menu, .main, .right 
+      que seran ordenados y adaptados a la pantalla */
+        width:100%;
+        height: auto;
+
+        
+        
+      }   
+    .img{
+
+        width:100%;
+        max-width:400px;
+    }
+     
+    video{
+
+        width:100%;
+        max-width:400px;
+    }
+
+    video{
+
+        width:100%;
+        max-width:400px;
+    }
+
+    table{
+
+        width:100%;
+        max-width:400px;
+    }
+
+}
+
+.pie{
+background-color:#ad32ff;
+text-align: center;
+padding: 20px;  
+}
+
+body{
+    background-image: url("imag/FONDO.jpg");
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+#logo{
+    margin-top: -6px;
+        width: 8%;
+        height: auto;
+        float: left;
+    }
+.pie a {
+    background-color: hsla(0.19turn, 100%, 50%, 0.5);
+    padding: 5px;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+.pie a:hover{
+    background-color: hsla(207.585, 96%, 10%, 0.2);
+    color: black;
+}
+.L{
+    float: left;
+    margin-left: 10px;
+    margin-top: -15px;
+}
+.R{
+    float: right;
+    margin-right: 10px;
+    margin-top: -15px;
+}
+h1{
+    font-style: oblique;
+    font-size: 50px;
+}
+ h2, h3, h4, h5, h6{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+    color: hsla(0.4turn, 105%, 150%, 0.9);
+    text-decoration: underline rose;
+}
+p{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: justify;
+}
+.pelota{
+    height: 1225px;
+    width: 100%;
+}
+.insta{
+    width: 60%;
+}
+.maps{
+    width: 60%;
+}
+
+.youtube{
+    width: 60%;
+}
